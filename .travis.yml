@@ -10,5 +10,7 @@ script: ./sbuild-0.7.7/bin/sbuild stage-site-to-git
 
 after_script:
  - cd target
+  -git config user.email "le.petit.fou@web.de"
+ - git config user.name "Travis Build on behalf of Tobias Roeser"
  - git commit -m "Test"
- - git log -p
+ - git log
