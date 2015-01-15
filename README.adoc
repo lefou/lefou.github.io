@@ -1,0 +1,28 @@
+= Tobias Roeser's Blog
+
+This is the source of http://lefou.github.io[lefou.github.io].
+
+It is build with SBuild 0.7.x. 
+
+== Build the site
+
+----
+sbuild clean jbake
+----
+
+== Serve the site from a local webserver (localhost:8820)
+
+----
+sbuild clean jbake
+----
+
+== Publishing the site
+
+----
+sbuild stage-site-to-git
+cd target
+git commit
+git push
+----
+
+After the push (to the master branch), the page will automatically appear on http://lefou.github.io[lefou.github.io].
