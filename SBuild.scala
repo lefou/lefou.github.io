@@ -1,8 +1,8 @@
 import de.tototec.sbuild._
 
 @version("0.7.2")
-// @classpath("mvn:org.sbuild:org.sbuild.plugins.jbake:0.1.2")
-@classpath("/home/lefou/work/tototec/sbuild/jbake/org.sbuild.plugins.jbake/target/org.sbuild.plugins.jbake-0.1.2.9000.jar")
+@classpath("mvn:org.sbuild:org.sbuild.plugins.jbake:0.1.2")
+// @classpath("/home/lefou/work/tototec/sbuild/jbake/org.sbuild.plugins.jbake/target/org.sbuild.plugins.jbake-0.1.2.9000.jar")
 class SBuild(implicit _project: Project) {
 
   val repo = "https://github.com/lefou/lefou.github.io.git"
