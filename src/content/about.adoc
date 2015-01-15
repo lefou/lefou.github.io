@@ -1,0 +1,14 @@
+= About
+:author: Tobias Roeser
+:revdate: 2015-01-14
+:jbake-type: page
+:jbake-status: published
+
+My name is Tobias Roeser.
+
+I'm a software developer living in Leipzig, Germany. I'm a Scala and OSGi Enthusiast and love Open-Source development.
+
+On this blog you will find various notes mostly about programming but sometimes also other stuff. I don't blog on a regular basis though.
+
+You can find me also on Twitter as @TobiasRoeser and GitHub as lefou.
+

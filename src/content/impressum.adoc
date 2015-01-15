@@ -1,0 +1,14 @@
+= Impressum
+:author: Tobias Roeser
+:revdate: 2015-01-14
+:jbake-type: page
+:jbake-status: published
+
+Angaben gemäß § 5 TMG:
+
+Tobias Roeser +
+Industriestraße 22 +
+04229 Leipzig
+
+Telefon: +49 (0) 178 / 890 61 36 +
+E-Mail: le.petit.fou@web.de

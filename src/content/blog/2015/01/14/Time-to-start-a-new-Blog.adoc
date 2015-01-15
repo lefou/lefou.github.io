@@ -1,0 +1,16 @@
+= Time to start a new Blog
+:author: Tobias Roeser
+:revdate: 2015-01-14 14:00
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: blog
+
+It's time to start a new blog.
+
+Not that I have to say that much currently, but at least to preserve some posts of the old died server and to have a place for future content.
+
+This new blog is hosted on Github and build with JBake, AsciiDoctor and SBuild (via the JBake Plugin).
+
+Happy new year 2015!
+
+Tobias
