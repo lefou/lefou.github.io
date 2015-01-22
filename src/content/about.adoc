@@ -10,5 +10,5 @@ I'm a software developer living in Leipzig, Germany. I'm a Scala and OSGi Enthus
 
 On this blog you will find various notes mostly about programming but sometimes also other stuff. I don't blog on a regular basis though.
 
-You can find me also on Twitter as @TobiasRoeser and GitHub as lefou.
+You can find me also on Twitter as https://twitter.com/TobiasRoeser[@TobiasRoeser] and GitHub as https://github.com/lefou[lefou].
 

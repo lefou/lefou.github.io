@@ -1,0 +1,60 @@
+= Projects
+:author: Tobias Roeser
+:revdate: 2015-01-15
+:jbake-type: page
+:jbake-status: published
+
+== Open Source Projects initiated by me
+
+=== SBuild
+
+=== LambdaTest
+
+https://github.com/lefou/poor-mans-lambda-test[LambdaTest] is a Java Testing Framework (based on TestNG) that allows you to write your test with Java 8 Lambda expressions.
+
+I wrote it in the need for a good and easy way to write Unit tests with Java 8 (in the spirit of ScalaTest). 
+
+LambdaTest allows you to to concentrate on writing and exeuting your test cases, without worrying to much about writing lots of boilerplate code like new methods for each test, annotations, data providers and the like.
+It also adds nice ways to intercept exceptions, catch more than one assert in one run (fail late) and prints very detailed assertion errors indicating the exact difference between the actual and the expected results. 
+
+Homepage: https://github.com/lefou/poor-mans-lambda-test +
+License: Apache License Version 2.0
+
+=== Functional Utils
+
+Useful helper classes and interfaces which help to write more functional Java code. 
+
+Homepage: https://github.com/ToToTec/de.tototec.utils.functional +
+License: Apache License Version 2.0
+
+=== cmvn - Configured Maven
+
+=== Maven Version Updater
+
+=== KThinkBat
+
+== Open Source Projects I participate in
+
+=== AsciiDoctor
+
+I really like the AsciiDoc format.
+I contribute to various projects to support and improve the adoption and integration of AsciiDoctor.
+
+Some of these projects are:
+
+* JBake - The Jekyll of the JVM - A Java-based static site generator, that supports various markup and template languages including AsciiDoc  
+* AsciidocFX - A JavaFX-based AsciiDoc editor with live preview of the rendered AsciiDoc content 
+* GitBucket - A Scala-based GitHub clone, where I integrated support for AsciiDoc rendering. (Unfortunately it was removed again because of its size contribution to the deployment. Your help is needed to convince the maintainer of it's usefulness)  
+
+== Community
+
+=== Leipzig Scala User Group
+
+I'm the organizer of the http://www.meetup.com/Scala-Leipzig-Meetup/[Scala User Group in Leipzig].
+
+This group is for all people interested in Scala in and around Leipzig. We organize talks, hackathons, coding dojos and drinkups mostly but not only about Scala.
+
+The Scala Leipig group has also a Twitter channel: https://twitter.com/ScalaLeipzig[@ScalaLeipzig]
+
+There is also a https://www.xing.com/communities/groups/scala-leipzig-9a58-1004637[Scala Leipzig Group on Xing] which we used to discuss and organize events before we migrated to Meetup.
+
