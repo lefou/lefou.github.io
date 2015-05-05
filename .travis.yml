@@ -1,0 +1,9 @@
+language: java
+
+before_script:
+ - "wget http://sbuild.org/uploads/sbuild/0.7.7/sbuild-0.7.7-dist.zip"
+ - "unzip sbuild-0.7.7-dist.zip"
+ - "chmod +x ./sbuild-0.7.7/bin/sbuild"
+ - "./sbuild-0.7.7/bin/sbuild --version"
+
+script: ./sbuild-0.7.7/bin/sbuild stage-site-to-git
