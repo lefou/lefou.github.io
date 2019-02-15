@@ -1,11 +1,11 @@
 = Impressum
 :author: Tobias Roeser
-:revdate: 2015-05-04
+:revdate: 2019-02-15
 :jbake-type: page
 :jbake-status: published
 
 Tobias Roeser +
-Friedrich-Ebert-Straße 3
+Dorfstr. 13 +
 02991 Lauta
 
 Telefon: +49 (0) 178 / 890 61 36 +
