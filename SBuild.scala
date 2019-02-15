@@ -15,7 +15,7 @@ class SBuild(implicit _project: Project) {
   Plugin[JBake] configure { _.copy(
     sourceDir = Path("src"),
     targetDir = Path("target"),
-    jbakeVersion = JBakeVersion.Packaged("2.3.2")
+    jbakeVersion = JBakeVersion.Packaged("2.3.2", s"http://dl.bintray.com/jbake/binary/jbake-2.3.2-bin.zip")
    ) }
 
   Target("phony:prepare-target") exec {
