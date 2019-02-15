@@ -1,6 +1,6 @@
 = Projects
 :author: Tobias Roeser
-:revdate: 2015-01-15
+:revdate: 2019-02-15
 :jbake-type: page
 :jbake-status: published
 
@@ -10,7 +10,8 @@
 
 === LambdaTest
 
-https://github.com/lefou/poor-mans-lambda-test[LambdaTest] is a Java Testing Framework (based on TestNG) that allows you to write your test with Java 8 Lambda expressions.
+https://github.com/lefou/poor-mans-lambda-test[LambdaTest] is a Java Testing Framework that works on top of other popular Unit-Test Frameworks like JUnit or TestNG.
+LambdaTest allows you to write your test with Java 8 Lambda expressions.
 
 I wrote it in the need for a good and easy way to write Unit tests with Java 8 (in the spirit of ScalaTest). 
 
@@ -22,7 +23,7 @@ License: Apache License Version 2.0
 
 === Functional Utils
 
-Useful helper classes and interfaces which help to write more functional Java code. 
+Useful helper classes and interfaces which help to write more functional Java code. It goes back to a time were Java had nothing that allowed functional programming. It is still useful, esp. if you want to preserve backward compatibility to older Java versions, but some of it's classes have now counterparts in the JDK.
 
 Homepage: https://github.com/ToToTec/de.tototec.utils.functional +
 License: Apache License Version 2.0
