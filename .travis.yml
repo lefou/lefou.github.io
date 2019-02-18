@@ -3,6 +3,9 @@ language: java
 env:
   - MILL_VERSION=0.3.6
 
+before_script:
+  - curl -L -o ~/bin/mill https://github.com/lihaoyi/mill/releases/download/${MILL_VERSION}/${MILL_VERSION} && chmod +x ~/bin/mill
+
 matrix:
   include:
 
@@ -17,8 +20,19 @@ matrix:
 
     - stage: Build
       name: Build with mill
-      before_script:
-        - curl -L -o ~/bin/mill https://github.com/lihaoyi/mill/releases/download/${MILL_VERSION}/${MILL_VERSION} && chmod +x ~/bin/mill
       script:
         - mill -i site.jbake
 
+    - stage: Publish Site
+      name: Build and publish site to GitHub Pages
+      script:
+        - mill -i site.jbake
+      deploy:
+        provider: pages
+        skip-cleanup: true
+        keep-history: true
+        github-token: $GITHUB_TOKEN
+        target-branch: master
+        local-dir: out/site/jbake/dest
+        on:
+          branch: site
