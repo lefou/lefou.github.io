@@ -2,27 +2,20 @@
 
 This is the source of http://lefou.github.io[lefou.github.io].
 
-It is build with SBuild 0.7.x. 
+It is build with mill 0.3.6.
 
-== Build the site
+== Build the site with mill
 
 ----
-LC_ALL=C sbuild clean jbake
+mill site.jbake
 ----
+
+The built site is located at `out/site/jbake/dest`.
 
 == Serve the site from a local webserver (localhost:8820)
 
 ----
-LC_ALL=C sbuild clean serve-jbake
+mill site.jbakeServe
 ----
 
-== Publishing the site
-
-----
-LC_ALL=C sbuild stage-site-to-git
-cd target
-git commit
-git push
-----
-
-After the push (to the master branch), the page will automatically appear on http://lefou.github.io[lefou.github.io].
+The content of the master branch will automatically appear on http://lefou.github.io[lefou.github.io].
