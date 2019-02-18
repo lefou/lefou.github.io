@@ -36,3 +36,4 @@ matrix:
         local-dir: out/site/jbake/dest
         on:
           branch: site
+        committer-from-gh: true
