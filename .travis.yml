@@ -34,6 +34,7 @@ matrix:
         github-token: $GITHUB_TOKEN
         target-branch: master
         local-dir: out/site/jbake/dest
+        name: Tobias Roeser (Bot)
+        email: le.petit.fou@web.de
         on:
           branch: site
-        committer-from-gh: true
