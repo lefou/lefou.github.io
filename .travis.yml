@@ -1,9 +1,24 @@
 language: java
 
-before_script:
- - "wget http://sbuild.org/uploads/sbuild/0.7.7/sbuild-0.7.7-dist.zip"
- - "unzip sbuild-0.7.7-dist.zip"
- - "chmod +x ./sbuild-0.7.7/bin/sbuild"
- - "./sbuild-0.7.7/bin/sbuild --version"
+env:
+  - MILL_VERSION=0.3.6
 
-script: ./sbuild-0.7.7/bin/sbuild stage-site-to-git
+matrix:
+  include:
+
+    - stage: Build
+      name: Build with SBuild
+      before_script:
+        - "wget http://sbuild.org/uploads/sbuild/0.7.7/sbuild-0.7.7-dist.zip"
+        - "unzip sbuild-0.7.7-dist.zip"
+        - "chmod +x ./sbuild-0.7.7/bin/sbuild"
+        - "./sbuild-0.7.7/bin/sbuild --version"
+      script: ./sbuild-0.7.7/bin/sbuild stage-site-to-git
+
+    - stage: Build
+      name: Build with mill
+      before_script:
+        - curl -L -o ~/bin/mill https://github.com/lihaoyi/mill/releases/download/${MILL_VERSION}/${MILL_VERSION} && chmod +x ~/bin/mill
+      script:
+        - mill -i site.jbake
+
