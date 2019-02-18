@@ -6,35 +6,17 @@ env:
 before_script:
   - curl -L -o ~/bin/mill https://github.com/lihaoyi/mill/releases/download/${MILL_VERSION}/${MILL_VERSION} && chmod +x ~/bin/mill
 
-matrix:
-  include:
+script:
+  - mill -i site.jbake
 
-    - stage: Build
-      name: Build with SBuild
-      before_script:
-        - "wget http://sbuild.org/uploads/sbuild/0.7.7/sbuild-0.7.7-dist.zip"
-        - "unzip sbuild-0.7.7-dist.zip"
-        - "chmod +x ./sbuild-0.7.7/bin/sbuild"
-        - "./sbuild-0.7.7/bin/sbuild --version"
-      script: ./sbuild-0.7.7/bin/sbuild stage-site-to-git
-
-    - stage: Build
-      name: Build with mill
-      script:
-        - mill -i site.jbake
-
-    - stage: Publish Site
-      name: Build and publish site to GitHub Pages
-      script:
-        - mill -i site.jbake
-      deploy:
-        provider: pages
-        skip-cleanup: true
-        keep-history: true
-        github-token: $GITHUB_TOKEN
-        target-branch: master
-        local-dir: out/site/jbake/dest
-        name: Tobias Roeser (Bot)
-        email: le.petit.fou@web.de
-        on:
-          branch: site
+deploy:
+  provider: pages
+  skip-cleanup: true
+  keep-history: true
+  github-token: $GITHUB_TOKEN
+  target-branch: master
+  local-dir: out/site/jbake/dest
+  name: Tobias Roeser (Bot)
+  email: le.petit.fou@web.de
+  on:
+    branch: site
