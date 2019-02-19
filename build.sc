@@ -1,5 +1,5 @@
 import mill._
-import $ivy.`de.tototec::de.tobiasroeser.mill.jbake:0.1.0`
+import $ivy.`de.tototec::de.tobiasroeser.mill.jbake:0.2.0`
 import de.tobiasroeser.mill.jbake._
 
 object site extends JBakeModule {
